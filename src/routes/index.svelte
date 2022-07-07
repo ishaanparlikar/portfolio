@@ -3,6 +3,5 @@
 </script>
 
 <template>
-	<h1 />
 	<Banner />
 </template>
