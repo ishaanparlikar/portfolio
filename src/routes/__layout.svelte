@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	// import '/static/global.css';
 	import LeftNavigation from '../components/organisms/LeftNavigation.svelte';
 	import Footer from '../components/organisms/Footer.svelte';
 	import Navbar from '../components/organisms/Navbar.svelte';

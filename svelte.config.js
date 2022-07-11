@@ -5,10 +5,12 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	// preprocess: preprocess(),
+	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			fallback:'index.html'
+		}),
 		prerender: {
 			default: true,
 		},
