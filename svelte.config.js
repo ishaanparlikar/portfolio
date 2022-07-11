@@ -8,8 +8,9 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
+		trailingSlash: 'never',
 		adapter: adapter({
-			fallback:'index.html'
+			fallback:'index.html',
 		}),
 		prerender: {
 			default: true,
