@@ -1,4 +1,5 @@
 <script lang="ts">
+	import "/static/app.css";
 	import LeftNavigation from '../components/organisms/LeftNavigation.svelte';
 	import Footer from '../components/organisms/Footer.svelte';
 	import Navbar from '../components/organisms/Navbar.svelte';
