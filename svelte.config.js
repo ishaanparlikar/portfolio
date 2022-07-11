@@ -8,9 +8,6 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		// paths:{
-		// 	base:''
-		// },
 		adapter: adapter({
 			fallback:'index.html'
 		}),
