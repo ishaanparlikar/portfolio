@@ -1,0 +1,22 @@
+[
+	{
+		"name": "About",
+		"route": "/about"
+	},
+	{
+		"name": "Work",
+		"route": "/work"
+	},
+	{
+		"name": "Contact",
+		"route": "/contact"
+	},
+	{
+		"name": "skills",
+		"route": "/skills"
+	},
+	{
+		"name": "Projects",
+		"route": "/projects"
+	}
+]
