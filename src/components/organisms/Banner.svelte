@@ -5,7 +5,7 @@
 	let banner = false;
 
 	onMount(() => {
-		banner = !banner;
+		banner = true;
 	});
 </script>
 
