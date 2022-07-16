@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let color='';
+	export let color = '';
 	export let unit = 'px';
 	export let duration = '1.5s';
 	export let size = '60';
@@ -11,9 +11,9 @@
 	<div />
 </span>
 
-<style >
-  span {
-    --color: var(--accent);
+<style>
+	span {
+		--color: var(--accent);
 		width: var(--size);
 		height: calc(var(--size) / 4);
 		position: relative;

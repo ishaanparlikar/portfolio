@@ -11,11 +11,11 @@ const firebaseConfig = {
 	measurementId: import.meta.env.VITE_measurementId
 };
 
-let analytics:any;
-const app =initializeApp(firebaseConfig);
+let analytics: any;
+const app = initializeApp(firebaseConfig);
 
- if (app.name && typeof window !== 'undefined') {
-		analytics = getAnalytics(app);
- }
+if (app.name && typeof window !== 'undefined') {
+	analytics = getAnalytics(app);
+}
 
- export { analytics, app };
+export { analytics, app };

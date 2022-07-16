@@ -1,7 +1,6 @@
 <script>
-	import Button from '../atoms/Button.svelte';
-	// @ts-ignore
-	import navlinks from '/static/data/Navlinks.json';
+	import Button from 'src/components/atoms/Button.svelte';
+	import navlinks from 'static/data/Navlinks.json';
 </script>
 
 <div class="">
@@ -12,9 +11,9 @@
 		<div class="flex-1 text-sm justify-center">
 			<ul class="menu menu-horizontal p-0 mx-5">
 				{#each navlinks as nav, index}
-					<li class='mx-4'>
+					<li class="mx-4">
 						<a href={nav.route} class="hover:bg-secondary hover:text-primary hover:scale-110">
-							<span class="text-neutral p-0">{index+1}.</span>
+							<span class="text-neutral p-0">{index + 1}.</span>
 							{nav.name}
 						</a>
 					</li>

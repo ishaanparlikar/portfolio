@@ -1,9 +1,9 @@
 {
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "editor.fontFamily": "OperatorMonoLig Nerd Font",
-  "editor.fontSize": 17,
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.integrated.fontSize": 14,
-  "terminal.explorerKind": "external",
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"editor.fontFamily": "OperatorMonoLig Nerd Font",
+	"editor.fontSize": 17,
+	"terminal.integrated.fontFamily": "Hack Nerd Font",
+	"terminal.integrated.fontSize": 14,
+	"terminal.explorerKind": "external"
 }

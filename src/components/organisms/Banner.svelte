@@ -1,9 +1,7 @@
 <script>
-	// @ts-ignore
-	import Button from '/src/components/atoms/Button.svelte';
+	import Button from 'src/components/atoms/Button.svelte';
 	import { fade, fly } from 'svelte/transition';
 	import { onMount, onDestroy } from 'svelte';
-
 
 	let banner = false;
 	onMount(() => {

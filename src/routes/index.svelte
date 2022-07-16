@@ -1,6 +1,6 @@
 <script context="module">
 	// import { app, analytics } from '../firebase';
-	import Banner from '/src/components/organisms/Banner.svelte';
+	import Banner from 'src/components/organisms/Banner.svelte';
 </script>
 
 <script>
@@ -11,5 +11,5 @@
 </svelte:head>
 
 <template>
-	<Banner/>
+	<Banner />
 </template>

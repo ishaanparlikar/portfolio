@@ -1,7 +1,7 @@
 <script lang="ts">
-	import ProgressIcon from '/src/components/organisms/ProgressIcon.svelte';
-	import IconTypes from '/static/data/IconType.json';
-	import Box from '/src/components/organisms/Box.svelte';
+	import ProgressIcon from 'src/components/organisms/ProgressIcon.svelte';
+	import IconTypes from 'static/data/IconType.json';
+	import Box from 'src/components/organisms/Box.svelte';
 </script>
 
 <svelte:head>
@@ -16,12 +16,11 @@
 			</div>
 		{/each}
 	</Box>
-	<Box title='Frameworks'>
+	<Box title="Frameworks">
 		{#each IconTypes as icon}
-		<div class="my-2 flex items-center gap-5">
-			<ProgressIcon iconType={icon.logo} progressValue={icon.value} />
-		</div>
-	{/each}
+			<div class="my-2 flex items-center gap-5">
+				<ProgressIcon iconType={icon.logo} progressValue={icon.value} />
+			</div>
+		{/each}
 	</Box>
-
 </div>

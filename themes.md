@@ -10,7 +10,6 @@ https://colorhunt.co/palette/1b262c0f4c7500b7c2fdcb9e
 https://neumorphism.io/#cce6f4
 https://docs.iconify.design/icon-components/svelte/
 
-
 ### Locale Gen
 
 {@html $t("homepage.welcome", { name: "Jane Doe" })}!
