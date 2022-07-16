@@ -1,0 +1,27 @@
+
+[
+  {
+    "logo":"logos:javascript",
+    "value":100
+  },
+  {
+    "logo":"logos:html-5",
+    "value":90
+  },
+  {
+    "logo":"logos:css-3",
+    "value":80
+  },
+  {
+    "logo":"logos:react",
+    "value":70
+  },
+  {
+    "logo":"logos:tailwindcss-icon",
+    "value":60
+  },
+  {
+    "logo":"vscode-icons:file-type-rust",
+    "value":50
+  }
+]
