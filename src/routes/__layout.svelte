@@ -11,13 +11,13 @@
 	onMount(() => {
 		setTimeout(() => {
 			loading = false;
-		}, 2000);
+		}, 1500);
 	});
 </script>
 
 {#if loading}
 	<div class="flex items-center justify-center h-full">
-		<Loader duration="1s" size="85" />
+		<Loader duration="1.5s" size="85" />
 	</div>
 {:else}
 	<div class="flex flex-col h-full">
