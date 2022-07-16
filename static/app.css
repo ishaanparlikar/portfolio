@@ -4,18 +4,18 @@
 
 html,
 body {
-	margin: 0;
-	padding: 0;
-	/* border-box */
-	box-sizing: border-box;
-	line-height: normal;
-	height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* border-box */
+  box-sizing: border-box;
+  line-height: normal;
+  height: 100vh;
 }
 
 @layer base {
-	html,
-	body {
-		font-family: 'Arima', system-ui, sans-serif;
-		font-size: 17px;
-	}
+  html,
+  body {
+    font-family: 'Arima', system-ui, sans-serif;
+    font-size: 17px;
+  }
 }

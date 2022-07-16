@@ -1,3 +1,3 @@
 <svelte:head>
-	<title>Projects</title>
+  <title>Projects</title>
 </svelte:head>
