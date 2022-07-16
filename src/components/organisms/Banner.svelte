@@ -1,9 +1,11 @@
 <script>
-	import Button from '../atoms/Button.svelte';
+	// @ts-ignore
+	import Button from '/src/components/atoms/Button.svelte';
 	import { fade, fly } from 'svelte/transition';
 	import { onMount, onDestroy } from 'svelte';
-	let banner = false;
 
+
+	let banner = false;
 	onMount(() => {
 		banner = true;
 	});
@@ -14,9 +16,7 @@
 		transition:fade|local={{ delay: 500, duration: 800 }}
 		class="px-32 flex flex-col items-end justify-center"
 	>
-		<small class="text-accent font-secondary text-lg mb-7"
-			>Hi, my name is</small
-		>
+		<small class="text-accent font-secondary text-lg mb-7">Hi, my name is</small>
 		<h1 class="text-7xl text-neutral mt-5 mb-10 font-primary font-bold">{`NAME`}</h1>
 		<h2 class="text-7xl text-base-100 line-1">And I am a ...</h2>
 
@@ -25,8 +25,3 @@
 		</div>
 	</div>
 {/if}
-
-<style>
-
-
-</style>

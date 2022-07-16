@@ -1,8 +1,10 @@
 {
 	"name": "portfolio",
 	"version": "0.0.1",
+
+	"type": "module",
 	"scripts": {
-		"dev": "vite dev `--port 8000`",
+		"dev": "vite dev --port 8000",
 		"build": "vite build",
 		"package": "svelte-kit package",
 		"preview": "vite preview",
@@ -36,7 +38,7 @@
 		"typescript": "^4.7.2",
 		"vite": "^2.9.13"
 	},
-	"type": "module",
+
 	"dependencies": {
 		"daisyui": "^2.18.1",
 		"firebase": "^9.9.0"

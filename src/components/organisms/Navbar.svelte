@@ -5,14 +5,14 @@
 </script>
 
 <div class="">
-	<div class="navbar bg-primary-100 py-4">
-		<div class="flex-1">
+	<div class="navbar bg-primary-100 py-4 justify-between items-center">
+		<div class="">
 			<a href="/" class="btn btn-ghost normal-case text-xl">daisyUI</a>
 		</div>
-		<div class="flex-none mr-10 text-sm">
+		<div class="flex-1 text-sm justify-center">
 			<ul class="menu menu-horizontal p-0 mx-5">
 				{#each navlinks as nav, index}
-					<li>
+					<li class='mx-4'>
 						<a href={nav.route} class="hover:bg-secondary hover:text-primary hover:scale-110">
 							<span class="text-neutral p-0">{index+1}.</span>
 							{nav.name}
@@ -20,8 +20,8 @@
 					</li>
 				{/each}
 			</ul>
-			<Button>Resume</Button>
 		</div>
+		<Button>Resume</Button>
 	</div>
 </div>
 
