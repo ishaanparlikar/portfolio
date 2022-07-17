@@ -24,9 +24,9 @@
 		<Navbar />
 		<div class="flex h-full items-center">
 			<LeftNavigation />
-			<div class="w-full">
+			<main class="w-full">
 				<slot />
-			</div>
+			</main>
 		</div>
 	</div>
 	<Footer />
