@@ -1,27 +1,74 @@
-
-[
-  {
-    "logo":"logos:javascript",
-    "value":100
-  },
-  {
-    "logo":"logos:html-5",
-    "value":90
-  },
-  {
-    "logo":"logos:css-3",
-    "value":80
-  },
-  {
-    "logo":"logos:react",
-    "value":70
-  },
-  {
-    "logo":"logos:tailwindcss-icon",
-    "value":60
-  },
-  {
-    "logo":"vscode-icons:file-type-rust",
-    "value":50
-  }
-]
+{
+  "languages": [
+    {
+      "logo": "logos:javascript",
+      "value": 70
+    },
+    {
+      "logo": "logos:html-5",
+      "value": 90
+    },
+    {
+      "logo": "logos:typescript-icon",
+      "value": 65
+    },
+    {
+      "logo": "logos:css-3",
+      "value": 80
+    },
+    {
+      "logo": "vscode-icons:file-type-rust",
+      "value": 50
+    },
+    {
+      "logo": "logos:python",
+      "value": 70
+    }
+  ],
+  "frameworks": [
+    {
+      "logo": "logos:tailwindcss-icon",
+      "value": 80
+    },
+    {
+      "logo": "logos:react",
+      "value": 70
+    },
+    {
+      "logo": "vscode-icons:file-type-next",
+      "value": 70
+    },
+    {
+      "logo": "logos:svelte-icon",
+      "value": 60
+    },
+    {
+      "logo": "logos:nodejs-icon",
+      "value": 45
+    },
+    {
+      "logo": "logos:vue",
+      "value": 65
+    }
+  ],
+  "Others": [
+    {
+      "logo": "codicon:github-alt"
+    },
+    {
+      "logo": "logos:firebase"
+    },
+    {
+      "logo": "logos:aws"
+    },
+    {
+      "logo": "logos:storybook-icon"
+    },
+    {
+      "logo": "vscode-icons:file-type-django"
+    },
+    {
+      "logo": "mdi:language-markdown"
+    }
+  ]
+}

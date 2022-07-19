@@ -12,10 +12,11 @@ module.exports = {
 	daisyui: {
 		themes: [
 			'dark',
+			'cupcake',		
 			{
 				solarizedDark: {
-					primary: '#161616',
-					secondary: '#EEEEEE',
+					primary: '#010210',
+					secondary: '#e7e7e7',
 					accent: '#FFD369',
 					neutral: '#00B7C2',
 					'base-100': '#A8DADC',

@@ -12,5 +12,5 @@ https://docs.iconify.design/icon-components/svelte/
 
 
 ### Locale Gen
-
+https://svelte.dev/repl/de39de663ef2445b8fe17b79c500013b?version=3.49.0
 {@html $t("homepage.welcome", { name: "Jane Doe" })}!
