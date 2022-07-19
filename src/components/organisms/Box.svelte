@@ -5,20 +5,19 @@
 
 	export let title: string;
 	export let animation = false;
-
+	export let styles: any;
 	onMount(() => {
 		animation = !animation;
 	});
 </script>
 
 {#if animation}
-	<div
-		class="p-6 shadow-lg shadow-accent border border-accent flex flex-col items-center justify-center"
-		transition:fade|local={{ delay: 250, duration: 800 }}
-	>
+	<div class="p-6 shadow-lg shadow-accent border border-accent">
 		{#if title}
-			<h2 class="text-3xl text-neutral">{title}</h2>
+			<h2 class="text-3xl text-neutral text-center mb-10">{title}</h2>
 		{/if}
-		<slot />
+		<div class={` ${styles}`} transition:fade|local={{ delay: 250, duration: 800 }}>
+			<slot />
+		</div>
 	</div>
 {/if}
