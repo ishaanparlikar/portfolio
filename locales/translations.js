@@ -1,7 +1,11 @@
 export default {
 	en: {
-		'banner.name': 'Ishan',
-		'banner.proffession':'Front-End Engineer'
+		'banner.name': 'Name',
+		'banner.proffession': 'Role',
+		'githubLink': '#',
+		'linkedInLink': '#',
+		'devTo': '#',
+		'emailLink': '#'
 	},
 
 };
