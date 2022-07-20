@@ -21,7 +21,7 @@
 		<h2 class="text-7xl text-base-100 line-1">And I am a {$t('banner.proffession')}</h2>
 
 		<div class="my-12" in:fly|local={{ x: 1000, duration: 1500 }}>
-			<Button>Check out my projects</Button>
+			<Button href='/projects'>Check out my projects</Button>
 		</div>
 	</div>
 {/if}
