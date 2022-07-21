@@ -1,5 +1,6 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
+	darkMode: 'class,[data-theme="dark"]',
 	theme: {
 		extend: {
 			fontFamily: {
@@ -11,10 +12,9 @@ module.exports = {
 	plugins: [require('daisyui')],
 	daisyui: {
 		themes: [
-			'dark',
-			'cupcake',		
+					
 			{
-				solarizedDark: {
+				dark: {
 					primary: '#010210',
 					secondary: '#e7e7e7',
 					accent: '#FFD369',
