@@ -1,7 +1,6 @@
 {
 	"name": "portfolio",
 	"version": "0.0.1",
-
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev --port 8000",
@@ -16,6 +15,7 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@iconify/icons-logos": "^1.2.11",
 		"@iconify/svelte": "^2.2.1",
 		"@playwright/test": "^1.22.2",
 		"@sveltejs/adapter-auto": "next",
@@ -38,9 +38,9 @@
 		"typescript": "^4.7.2",
 		"vite": "^3.0.0"
 	},
-
 	"dependencies": {
 		"daisyui": "^2.18.1",
-		"firebase": "^9.9.0"
+		"firebase": "^9.9.0",
+		"theme-change": "^2.1.0"
 	}
 }
