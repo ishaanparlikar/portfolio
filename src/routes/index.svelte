@@ -1,15 +1,20 @@
-<script context="module">
-	// import { app, analytics } from '../firebase';
-	import Banner from '/src/components/organisms/Banner.svelte';
-</script>
-
 <script>
+	import Banner from '/src/components/organisms/Banner.svelte';
+	import { t } from '/locales/i18n';
+	import { getAnalytics, logEvent } from 'firebase/analytics';
+	import { onMount } from 'svelte';
+	import { app } from '../firebase';
+
+	onMount(() => {
+		const analytics = getAnalytics(app);
+		logEvent(analytics, 'page_title');
+	});
 </script>
 
 <svelte:head>
-	<title>Ishan Parlikar's Portfolio</title>
+	<title>{$t('name')} Portfolio</title>
 </svelte:head>
 
 <template>
-	<Banner/>
+	<Banner />
 </template>

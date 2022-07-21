@@ -17,9 +17,9 @@
 			<span class="py-6 h-full">
 				<hr class="bg-accent w-[1px] h-full" />
 			</span>
-			<ul class="flex flex-col h-1/3 justify-between">
+			<ul class="flex flex-col h-1/3 justify-between gap-y-6">
 				<li
-					class="text-base-100 hover:text-neutral bg-primary shadow shadow-inner rounded-md hover:bg-secondary flex items-center p-2"
+					class="text-base-100 hover:text-neutral bg-primary shadow shadow-neutral rounded-md hover:text-neutral flex items-center p-2"
 					transition:fly|local={{ x: 200, duration: 2300 }}
 				>
 					<a target="_blank" href={$t('githubLink')}>
@@ -27,7 +27,7 @@
 					</a>
 				</li>
 				<li
-					class="text-base-100 hover:text-neutral bg-primary shadow shadow-inner rounded-md hover:bg-secondary flex items-center p-2"
+					class="text-base-100 hover:text-neutral bg-primary shadow shadow-neutral rounded-md hover:text-neutral flex items-center p-2"
 					transition:fly|local={{ x: 300, duration: 2500 }}
 				>
 					<a target="_blank" href={$t('linkedInLink')}>
@@ -35,7 +35,7 @@
 					</a>
 				</li>
 				<li
-					class="text-base-100 hover:text-neutral bg-primary shadow shadow-inner rounded-md hover:bg-secondary flex items-center p-2"
+					class="text-base-100 hover:text-neutral bg-primary shadow shadow-neutral rounded-md hover:text-neutral flex items-center p-2"
 					transition:fly|local={{ x: 400, duration: 2800 }}
 				>
 					<a target="_blank" href={$t('devTo')}>
