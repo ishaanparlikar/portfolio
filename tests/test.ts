@@ -1,6 +1,7 @@
-import { expect, test } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-test('index page has expected h1', async ({ page }) => {
-	await page.goto('/');
-	expect(await page.textContent('h1')).toBe('Ishan Parlikar');
+test('dark mode test', async ({ page }) => {
+  await page.goto('http://localhost:8000/');
+  const title = page.locator('html');
+  await expect(title).toHaveAttribute('data-theme','dark');
 });
