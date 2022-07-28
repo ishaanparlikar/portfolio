@@ -2,7 +2,7 @@
 	// @ts-ignore
 	import Button from '/src/components/atoms/Button.svelte';
 	import { fade, fly } from 'svelte/transition';
-	import { onMount, onDestroy } from 'svelte';
+	import { onMount } from 'svelte';
 
   import { t } from "/locales/i18n";
 	let banner = false;
