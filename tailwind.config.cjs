@@ -15,14 +15,14 @@ module.exports = {
 					
 			{
 				dark: {
-					primary: '#010210',
+					primary: '#01020e',
 					secondary: '#e7e7e7',
 					accent: '#FFD369',
 					neutral: '#00B7C2',
 					'base-100': '#A8DADC',
 					'--neutral': '#00B7C2',
 					'--base-100': '#A8DADC',
-					'--primary': '#161616',
+					'--primary': '#01020e',
 					'--secondary':'#EEEEEE',
 					'--accent':'#FFD369'
 				},
