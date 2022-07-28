@@ -39,6 +39,7 @@
 		"vite": "^3.0.2"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^3.6.2",
 		"core-js": "^3.23.5",
 		"daisyui": "^2.19.1",
 		"firebase": "^9.9.0",
