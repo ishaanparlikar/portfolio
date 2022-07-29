@@ -1,8 +1,11 @@
 <script>
 	import Button from '../atoms/Button.svelte';
-import ThemeToggle from '../atoms/ThemeToggle.svelte';
+	import ThemeToggle from '../atoms/ThemeToggle.svelte';
 	// @ts-ignore
 	import navlinks from '/static/data/Navlinks.json';
+	import { page } from '$app/stores';
+
+	console.log($page);
 </script>
 
 <div class="">
@@ -13,8 +16,13 @@ import ThemeToggle from '../atoms/ThemeToggle.svelte';
 		<div class="flex-1 text-sm justify-center">
 			<ul class="menu menu-horizontal p-0 mx-5">
 				{#each navlinks as nav, index}
-					<li class="mx-4 ">
-						<a href={nav.route} class="hover:bg-secondary hover:text-primary hover:scale-110">
+					<li class="mx-4">
+						<a
+							href={nav.route}
+							class={`hover:bg-secondary hover:text-primary hover:scale-110 ${
+								$page.url.pathname === nav.route ? 'bg-neutral text-primary' : ''
+							}`}
+						>
 							{nav.name}
 						</a>
 					</li>
@@ -24,7 +32,7 @@ import ThemeToggle from '../atoms/ThemeToggle.svelte';
 		<Button>Resume</Button>
 
 		<div class="ml-6">
-			<ThemeToggle/>
+			<ThemeToggle />
 		</div>
 	</div>
 </div>
