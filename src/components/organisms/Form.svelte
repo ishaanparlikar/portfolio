@@ -3,13 +3,20 @@
 	import { fade } from 'svelte/transition';
 	import Button from '../atoms/Button.svelte';
 	import emailjs from '@emailjs/browser';
-  import {goto} from '$app/navigation'
+	import { goto } from '$app/navigation';
+	import Modal from './Modal.svelte';
 	let errorMessage: boolean = false;
 
 	let name: String;
 	let email: String;
 	let subject: String;
 	let message: String;
+
+	let openModal: boolean = false;
+
+	function toggleModal() {
+		openModal = !openModal;
+	}
 
 	const handleSubmit = async () => {
 		if (name == '' || email == '' || subject == '' || validateEmail(email) == false) {
@@ -26,17 +33,17 @@
 				)
 				.then(
 					(response) => {
-						sessionStorage.setItem('form_submitted', 'true');
+						localStorage.setItem('form_submitted', 'true');
+						goto('/contact', { replaceState: true });
+						errorMessage = false;
+						name == '';
+						email == '';
+						subject == '';
 					},
 					(err) => {
 						console.log('Failed', err);
 					}
 				);
-        goto('/contact',{replaceState:true})
-			errorMessage = false;
-			name == '';
-			email == '';
-			subject == '';
 		}
 	};
 
@@ -98,9 +105,16 @@
 			<label for="message_area">Message</label>
 		</div>
 
-		<Button>Send</Button>
+		<Button onClickEvent={toggleModal}>Send</Button>
 	</form>
 </div>
+
+<Modal
+	{openModal}
+	title="Thank you"
+	message="I will contanct you shortly. Redirecting"
+	on:click={toggleModal}
+/>
 
 <style>
 	.form-item {

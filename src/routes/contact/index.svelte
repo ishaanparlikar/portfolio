@@ -3,11 +3,24 @@
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
+	import Modal from '/src/components/organisms/Modal.svelte';
 	onMount(() => {
 		const analytics = getAnalytics(app);
 		logEvent(analytics, 'page_title');
 	});
-	let form: Boolean = false;
+
+	let openModal:boolean=false
+	
+	function toggleModal(){
+		openModal=!openModal
+		console.log(openModal);
+	}
+
+</script>
+
+<script context="module">
+  export const hydrate = true;
+
 </script>
 
 <svelte:head>
@@ -20,6 +33,13 @@
 		<p class="text- text-secondary font-secondary text-center mb-10">
 			if you want to say Hello or If you have any questions, My inbox is always open for queries
 		</p>
-		<Button href="/contact/form">Say Hi 👋🏼</Button>
+		{#if localStorage.getItem('form_submitted') !== 'true'}
+			<Button href="/contact/form">Say Hi 👋🏼</Button>
+			{:else}
+			<Button onClickEvent={toggleModal} >Say Hi 👋🏼</Button>
+		{/if}
+	
+			<Modal {openModal} title="Thank you" message="I will contanct you shortly"  on:click={toggleModal}/>
+
 	</div>
 </div>
