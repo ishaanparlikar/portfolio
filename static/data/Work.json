@@ -1,0 +1,26 @@
+[
+  {
+    "company": "Bachelors",
+    "job_title": "",
+    "year_start": "2011",
+    "year_end": "2015"
+  },
+  {
+    "company": "DEF",
+    "job_title": "Front End Engineer",
+    "year_start": "2017",
+    "year_end": "2018"
+  },
+  {
+    "company": "Masters",
+    "job_title": "",
+    "year_start": "2018",
+    "year_end": "2020"
+  },
+  {
+    "company": "DEF",
+    "job_title": "Web Developer",
+    "year_start": "2021",
+    "year_end": "2022"
+  }
+]
