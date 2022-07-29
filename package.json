@@ -43,6 +43,7 @@
 		"core-js": "^3.23.5",
 		"daisyui": "^2.19.1",
 		"firebase": "^9.9.0",
+		"svelte-vertical-timeline": "^0.0.2",
 		"theme-change": "^2.1.0"
 	}
 }
