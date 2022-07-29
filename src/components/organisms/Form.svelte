@@ -3,33 +3,47 @@
 	import { fade } from 'svelte/transition';
 	import Button from '../atoms/Button.svelte';
 	import emailjs from '@emailjs/browser';
+  import {goto} from '$app/navigation'
 	let errorMessage: boolean = false;
+
 	let name: String;
 	let email: String;
 	let subject: String;
 	let message: String;
 
 	const handleSubmit = async () => {
-		if (name == '' || email == '' || subject == '') {
+		if (name == '' || email == '' || subject == '' || validateEmail(email) == false) {
 			errorMessage = true;
 			return;
 		}
+		if (validateEmail(email)) {
+			await emailjs
+				.send(
+					import.meta.env.VITE_EMAILJS_serviceID,
+					import.meta.env.VITE_EMAILJS_templateID,
+					{ to_name: name, to_from: email, to_subject: subject, to_message: message },
+					import.meta.env.VITE_EMAILJS_publicKey
+				)
+				.then(
+					(response) => {
+						sessionStorage.setItem('form_submitted', 'true');
+					},
+					(err) => {
+						console.log('Failed', err);
+					}
+				);
+        goto('/contact',{replaceState:true})
+			errorMessage = false;
+			name == '';
+			email == '';
+			subject == '';
+		}
+	};
 
-		emailjs
-			.send(
-				import.meta.env.VITE_EMAILJS_serviceID,
-				import.meta.env.VITE_EMAILJS_templateID,
-				{ to_name: name, to_from: email, to_subject: subject, to_message: message },
-				import.meta.env.VITE_EMAILJS_publicKey
-			)
-			.then(
-				(response) => {
-					sessionStorage.setItem('form_submitted', 'true');
-				},
-				(err) => {
-					console.log('Failed', err);
-				}
-			);
+	const validateEmail = (email: any) => {
+		var regex =
+			/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		return regex.test(String(email).toLowerCase());
 	};
 </script>
 
@@ -61,7 +75,9 @@
 				bind:value={email}
 				required
 			/>
-			<label for="email">Email</label>
+			<label class={`${validateEmail(email) && email !== '' ? '' : 'error'}`} for="email"
+				>Email</label
+			>
 		</div>
 		<div class="form-item  mb-5 mt-2 ">
 			<input
@@ -118,9 +134,13 @@
 	}
 	.form-item input:focus + label,
 	.form-item input:valid + label,
-	.form-item textarea:focus + label {
+	.form-item textarea:focus + label,
+	.form-item textarea:valid + label {
 		background: var(--primary);
 		font-size: 11px;
 		top: -5px;
+	}
+	.form-item input:focus + label.error {
+		color: red;
 	}
 </style>
