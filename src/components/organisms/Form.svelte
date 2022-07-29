@@ -32,7 +32,7 @@
 					import.meta.env.VITE_EMAILJS_publicKey
 				)
 				.then(
-					(response) => {
+					 (response) => {
 						localStorage.setItem('form_submitted', 'true');
 						goto('/contact', { replaceState: true });
 						errorMessage = false;
@@ -105,7 +105,7 @@
 			<label for="message_area">Message</label>
 		</div>
 
-		<Button onClickEvent={toggleModal}>Send</Button>
+		<Button>Send</Button>
 	</form>
 </div>
 
