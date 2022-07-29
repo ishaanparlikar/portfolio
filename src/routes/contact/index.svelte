@@ -13,7 +13,6 @@
 	
 	function toggleModal(){
 		openModal=!openModal
-		console.log(openModal);
 	}
 
 </script>
