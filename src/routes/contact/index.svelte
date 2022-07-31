@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Button from '/src/components/atoms/Button.svelte';
+	import Button from '$lib/components/atoms/Button.svelte';
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
-	import Modal from '/src/components/organisms/Modal.svelte';
+	import Modal from '$lib/components/organisms/Modal.svelte';
 	onMount(() => {
 		const analytics = getAnalytics(app);
 		logEvent(analytics, 'page_title');
@@ -17,10 +17,10 @@
 
 </script>
 
-<script context="module">
+<!-- <script context="module">
   export const hydrate = true;
 
-</script>
+</script> -->
 
 <svelte:head>
 	<title>Contact</title>

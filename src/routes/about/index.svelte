@@ -1,11 +1,10 @@
 <script>
-	import Card from '../../components/organisms/Card.svelte';
 	import { fade, fly, slide } from 'svelte/transition';
 	import { linear } from 'svelte/easing';
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { app } from '../../firebase';
 	import { onMount } from 'svelte';
-	import { t } from '/locales/i18n';
+	import { t } from '$lib/locales/i18n';
 
 	const analytics = getAnalytics(app);
 	let animate = false;

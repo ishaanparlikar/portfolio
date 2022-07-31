@@ -24,23 +24,25 @@
 <svelte:head>
 	<title>Work History</title>
 </svelte:head>
-
-<Timeline position="alternate">
-	{#each works as work, i}
-		<TimelineItem style="margin:15px 0">
-			<TimelineOppositeContent slot="opposite-content">
-				<p class="text-neutral">{work.year_start+'-'+work.year_end}</p>
-				<p class="font-secondary">{work.job_title}</p>
-			</TimelineOppositeContent>
-			<TimelineSeparator>
-				<TimelineDot
-					style={`background-color: ${i % 2 == 0 ? 'var(--accent)' : 'var(--light)'};`}
-				/>
-				<TimelineConnector />
-			</TimelineSeparator>
-			<TimelineContent>
-				<h3 class="text-accent font-bold font-secondary">{work.company}</h3>
-			</TimelineContent>
-		</TimelineItem>
-	{/each}
-</Timeline>
+<div class="flex items-center">
+	
+	<Timeline position="alternate">
+		{#each works as work, i}
+			<TimelineItem style="margin:15px 0">
+				<TimelineOppositeContent slot="opposite-content">
+					<p class="text-neutral">{work.year_start+'-'+work.year_end}</p>
+					<p class="font-secondary">{work.job_title}</p>
+				</TimelineOppositeContent>
+				<TimelineSeparator>
+					<TimelineDot
+						style={`background-color: ${i % 2 == 0 ? 'var(--accent)' : 'var(--light)'};`}
+					/>
+					<TimelineConnector />
+				</TimelineSeparator>
+				<TimelineContent>
+					<h3 class="text-accent font-bold font-secondary">{work.company}</h3>
+				</TimelineContent>
+			</TimelineItem>
+		{/each}
+	</Timeline>
+</div>

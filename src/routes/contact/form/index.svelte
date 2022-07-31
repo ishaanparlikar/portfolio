@@ -1,5 +1,5 @@
 <script>
-import Form from "/src/components/organisms/Form.svelte";
+import Form from "$lib/components/organisms/Form.svelte";
 
 </script>
 

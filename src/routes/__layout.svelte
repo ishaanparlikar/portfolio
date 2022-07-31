@@ -1,9 +1,9 @@
 <script lang="ts">
 	import '/static/app.css';
-	import LeftNavigation from '../components/organisms/LeftNavigation.svelte';
-	import Footer from '../components/organisms/Footer.svelte';
-	import Navbar from '../components/organisms/Navbar.svelte';
-	import Loader from '../components/atoms/Loader.svelte';
+	import LeftNavigation from '$lib/components/organisms/LeftNavigation.svelte';
+	import Footer from '$lib/components/organisms/Footer.svelte';
+	import Navbar from '$lib/components/organisms/Navbar.svelte';
+	import Loader from '$lib/components/atoms/Loader.svelte';
 	import { onMount } from 'svelte';
 
 	let loading = true;
