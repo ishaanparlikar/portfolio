@@ -3,6 +3,9 @@
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
 	import works from '/static/data/Work.json';
+	import { fade, fly } from 'svelte/transition';
+  import { t } from "$lib/locales/i18n";
+	let animate = false;
 
 	import {
 		Timeline,
@@ -13,9 +16,10 @@
 		TimelineContent,
 		TimelineOppositeContent
 	} from 'svelte-vertical-timeline';
-
-
+	
+	
 	onMount(() => {
+		animate = true;
 		const analytics = getAnalytics(app);
 		logEvent(analytics, 'page_title');
 	});
@@ -25,22 +29,32 @@
 	<title>Work History</title>
 </svelte:head>
 <div class="flex items-center h-full">
-	
 	<Timeline position="alternate">
 		{#each works as work, i}
-			<TimelineItem style="margin:15px 0">
-				<TimelineOppositeContent slot="opposite-content">
-					<p class="text-neutral">{work.year_start+'-'+work.year_end}</p>
-					<p class="font-secondary">{work.job_title}</p>
+		<TimelineItem style="margin:15px 0">
+			<TimelineOppositeContent slot="opposite-content">
+					{#if animate}
+					<p in:fly|local={{ x:1000, duration: 1500 }} class="text-neutral">{work.year_start+'-'+work.year_end}</p>
+					<p in:fade|local={{ delay: 1500, duration: 1500 }} class="font-secondary">{work.job_title}</p>
+					{/if}
 				</TimelineOppositeContent>
 				<TimelineSeparator>
-					<TimelineDot
-						style={`background-color: ${i % 2 == 0 ? 'var(--accent)' : 'var(--light)'};`}
-					/>
+					{#if animate}
+					<span  in:fly|local={{delay:250, y:-1000/2*(i+1), duration: 1500 }}>
+						<TimelineDot
+							style={`background-color: ${i % 2 == 0 ? 'var(--accent)' : 'var(--light)'};`}
+						/>
+					</span>
+					{/if}
+					
 					<TimelineConnector />
 				</TimelineSeparator>
 				<TimelineContent>
-					<h3 class="text-accent font-bold font-secondary">{work.company}</h3>
+					{#if animate}
+
+					<h3 in:fly|local={{ x:-1500, duration: 2000 }} class="text-accent font-bold font-secondary">{work.company}</h3>
+					{/if}
+
 				</TimelineContent>
 			</TimelineItem>
 		{/each}
