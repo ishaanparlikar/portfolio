@@ -29,19 +29,24 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
     "stack": [
       {
-        "logo": "logos:tailwindcss-icon"
+        "logo": "logos:tailwindcss-icon",
+        "name":"Tailwind"
       },
       {
-        "logo": "logos:react"
+        "logo": "logos:react",
+        "name":"React"
       },
       {
-        "logo": "vscode-icons:file-type-next"
+        "logo": "vscode-icons:file-type-next",
+        "name":"NextJs"
       },
       {
-        "logo": "logos:svelte-icon"
+        "logo": "logos:svelte-icon",
+        "name":"Svelte"
       },
       {
-        "logo": "logos:nodejs-icon"
+        "logo": "logos:nodejs-icon",
+        "name":"NodeJs"
       }
     ],
     "imageLink": "/static/data/Images/project2.jpg",
