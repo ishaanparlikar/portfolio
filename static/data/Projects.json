@@ -1,26 +1,76 @@
 [
   {
     "id": 1,
-    "title":"Project 1",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
-    "imageLink":"/static/data/Images/project1.jpg",
-    "projectLink":"",
-    "github":""
+    "title": "Project 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
+    "stack": [
+      {
+        "logo": "logos:tailwindcss-icon"
+      },
+      {
+        "logo": "logos:react"
+      },
+      {
+        "logo": "vscode-icons:file-type-next"
+      },
+      {
+        "logo": "logos:svelte-icon"
+      },
+      {
+        "logo": "logos:nodejs-icon"
+      }
+    ],
+    "projectLink": "",
+    "github": ""
   },
   {
     "id": 2,
-    "title":"Project 2",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
-    "imageLink":"/static/data/Images/project2.jpg",
-    "projectLink":"",
-    "github":""
+    "title": "Project 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
+    "stack": [
+      {
+        "logo": "logos:tailwindcss-icon"
+      },
+      {
+        "logo": "logos:react"
+      },
+      {
+        "logo": "vscode-icons:file-type-next"
+      },
+      {
+        "logo": "logos:svelte-icon"
+      },
+      {
+        "logo": "logos:nodejs-icon"
+      }
+    ],
+    "imageLink": "/static/data/Images/project2.jpg",
+    "projectLink": "",
+    "github": ""
   },
   {
     "id": 3,
-    "title":"Project 3",
-    "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
-    "imageLink":"/static/data/Images/project3.jpg",
-    "projectLink":"",
-    "github":""
+    "title": "Project 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed molestias magni ipsam doloribus quidem! Dolorem, dolor eligendi nesciunt explicabo, quam repellendus distinctio voluptatum quo deleniti quas porro corrupti perspiciatis obcaecati!",
+    "stack": [
+      {
+        "logo": "logos:tailwindcss-icon"
+      },
+      {
+        "logo": "logos:react"
+      },
+      {
+        "logo": "vscode-icons:file-type-next"
+      },
+      {
+        "logo": "logos:svelte-icon"
+      },
+      {
+        "logo": "logos:nodejs-icon"
+      }
+    ],
+    "imageLink": "/static/data/Images/project3.jpg",
+    "projectLink": "",
+    "github": ""
   }
 ]
