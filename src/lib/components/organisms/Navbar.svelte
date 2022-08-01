@@ -17,6 +17,7 @@
 					<li class="mx-4">
 						<a
 							href={nav.route}
+							sveltekit:prefetch
 							class={`hover:bg-secondary hover:text-primary hover:scale-110 ${
 								$page.url.pathname === nav.route ? 'bg-neutral text-primary' : ''
 							}`}
