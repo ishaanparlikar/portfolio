@@ -24,7 +24,7 @@
 <svelte:head>
 	<title>Work History</title>
 </svelte:head>
-<div class="flex items-center">
+<div class="flex items-center h-full">
 	
 	<Timeline position="alternate">
 		{#each works as work, i}

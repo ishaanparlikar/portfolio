@@ -19,7 +19,7 @@
 	<title>About {$t('name')}</title>
 </svelte:head>
 
-<div class="mx-auto flex items-center justify-between max-w-4xl">
+<div class="mx-auto flex items-center justify-between h-full max-w-4xl">
 	{#if animate}
 	<div class="border border-4 border-accent p-6 h-[500px] w-[300px]">
 		<img transition:fade|local={{ delay: 100, duration: 300 }} class="grayscale hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src="https://picsum.photos/800/" alt="">

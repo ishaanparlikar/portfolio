@@ -54,7 +54,7 @@
 	};
 </script>
 
-<div class="flex flex-col p-6 rounded-md gap-5">
+<div class="flex flex-col p-6 rounded-md gap-5 w-full h-full justify-center">
 	<a href="/contact">
 		<Icon height="30" width="30" icon="bx:arrow-back" />
 	</a>

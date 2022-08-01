@@ -16,5 +16,8 @@
 </svelte:head>
 
 <template>
-	<Banner />
+	<div class="flex items-center h-full justify-end">
+
+		<Banner />
+	</div>
 </template>

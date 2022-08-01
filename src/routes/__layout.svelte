@@ -22,7 +22,7 @@
 {:else}
 	<div class="flex flex-col h-full">
 		<Navbar />
-		<div class="flex h-full items-center">
+		<div class="flex h-full">
 			<LeftNavigation />
 			<main class="w-full">
 				<slot />

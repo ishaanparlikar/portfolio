@@ -22,7 +22,7 @@
 	<title>Skills</title>
 </svelte:head>
 
-<div class="flex justify-center items-center px-32 gap-10 flex-wrap">
+<div class="flex justify-center h-full items-center px-32 gap-10 flex-wrap">
 	<Box styles="grid grid-cols-2 gap-5" title="Programming/Markup">
 		{#each IconTypes.languages as icon}
 			<div>
