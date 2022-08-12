@@ -26,7 +26,7 @@
 	<title>Contact</title>
 </svelte:head>
 
-<div class="max-w-xl mx-auto h-full flex flex-col justify-center">
+<div class="max-w-xl mx-auto min-h-screen flex flex-col justify-center px-8 lg:px-0 items-center">
 	<div class="flex flex-col items-center justify-center ">
 		<h1 class="text-5xl text-accent mb-10">Get In touch</h1>
 		<p class="text- text-secondary font-secondary text-center mb-10">

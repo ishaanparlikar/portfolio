@@ -9,7 +9,7 @@ body {
 	/* border-box */
 	box-sizing: border-box;
 	line-height: normal;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 @layer base {

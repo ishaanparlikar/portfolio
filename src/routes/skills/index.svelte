@@ -22,15 +22,15 @@
 	<title>Skills</title>
 </svelte:head>
 
-<div class="flex justify-center h-full items-center px-32 gap-10 flex-wrap">
-	<Box styles="grid grid-cols-2 gap-5" title="Programming/Markup">
+<div class="flex justify-center h-full items-center px-4 md:px-24 lg:px-32 gap-10 flex-wrap">
+	<Box styles="grid md:grid-cols-2 gap-5" title="Programming/Markup">
 		{#each IconTypes.languages as icon}
 			<div>
 				<ProgressIcon iconType={icon.logo} progressValue={icon.value} />
 			</div>
 		{/each}
 	</Box>
-	<Box styles="grid grid-cols-2 gap-5" title="Frameworks">
+	<Box styles="grid md:grid-cols-2 gap-5" title="Frameworks">
 		{#each IconTypes.frameworks as icon}
 			<div>
 				<ProgressIcon iconType={icon.logo} progressValue={icon.value} />
@@ -38,11 +38,11 @@
 		{/each}
 	</Box>
 	{#if animate}
-	<Box styles="grid grid-cols-6 gap-5" title="Other Skills">
+	<Box styles="md:grid md:grid-cols-6 flex flex-wrap gap-5" title="Other Skills">
 		{#each IconTypes.Others as icon, i}
-				<div transition:fly|local={{ x: 200, duration: 15 * i }}>
+				<span transition:fly|local={{ x: 200, duration: 15 * i }}>
 					<Icon height="40" width="40" icon={`${icon.logo}`} />
-				</div>
+				</span>
 				{/each}
 			</Box>
 			{/if}

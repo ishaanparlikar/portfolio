@@ -16,7 +16,7 @@
 </script>
 
 {#if loading}
-	<div class="flex items-center justify-center h-full">
+	<div class="flex items-center justify-center lg:h-full h-screen">
 		<Loader duration="1.5s" size="85" />
 	</div>
 {:else}

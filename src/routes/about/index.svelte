@@ -19,15 +19,15 @@
 	<title>About {$t('name')}</title>
 </svelte:head>
 
-<div class="mx-auto flex items-center justify-between h-full max-w-4xl">
+<div class="mx-auto lg:flex items-center justify-center lg:justify-between h-full max-w-4xl px-8">
 	{#if animate}
-	<div class="border border-4 border-accent p-6 h-[500px] w-[300px]">
-		<img transition:fade|local={{ delay: 100, duration: 300 }} class="grayscale hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src="https://picsum.photos/800/" alt="">
+	<div class="border border-4 border-accent p-6 lg:h-[500px] lg:w-[300px]">
+		<img transition:fade|local={{ delay: 100, duration: 300 }} class="lg:grayscale lg:hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src="https://picsum.photos/800/" alt="">
 	</div>
 
-	<div class="max-w-md">
-		<h1 transition:fade|local={{delay: 250, duration: 800}} class="text-neutral text-7xl font-bold mb-10">{$t('name')}</h1>
-		<p transition:fade|local={{ delay: 500, duration: 1000 }} class="text-accent font-secondary text-xl">{$t('about.description')}</p>
+	<div class="max-w-md flex flex-col justify-center lg:items-start items-center">
+		<h1 transition:fade|local={{delay: 250, duration: 800}} class="text-neutral text-3xl lg:text-7xl font-bold lg:mb-10 my-5">{$t('name')}</h1>
+		<p transition:fade|local={{ delay: 500, duration: 1000 }} class="text-accent font-secondary text-sm lg:text-xl">{$t('about.description')}</p>
 	</div>
 	{/if}
 </div>

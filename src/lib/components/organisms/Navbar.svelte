@@ -6,8 +6,7 @@
 	import { page } from '$app/stores';
 </script>
 
-<div class="">
-	<div class="navbar bg-primary-100 py-4 justify-between items-center">
+	<div class="lg:navbar bg-primary-100 py-4 justify-between items-center hidden ">
 		<div class="">
 			<a href="/" class="btn btn-ghost normal-case text-xl">daisyUI</a>
 		</div>
@@ -34,7 +33,6 @@
 			<ThemeToggle />
 		</div>
 	</div>
-</div>
 
 <style>
 </style>

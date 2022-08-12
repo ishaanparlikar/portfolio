@@ -5,21 +5,21 @@
 	export let size = '60';
 </script>
 
-<span style="--size: {size}{unit}; --color:{color}; --duration: {duration};">
-	<div />
-	<div />
-	<div />
-</span>
+<div class="loader h-screen flex items-center justify-center" style="--size: {size}{unit}; --color:{color}; --duration: {duration};">
+	<div class="sub_loader" />
+	<div class="sub_loader" />
+	<div class="sub_loader" />
+</div>
 
 <style >
-  span {
+  .loader {
     --color: var(--accent);
 		width: var(--size);
 		height: calc(var(--size) / 4);
 		position: relative;
 		display: block;
 	}
-	div {
+	.sub_loader {
 		width: calc(var(--size) / 4);
 		height: calc(var(--size) / 4);
 		position: absolute;
@@ -30,13 +30,13 @@
 		transform: translateX(-50%) rotate(45deg) scale(0);
 		animation: diamonds var(--duration) linear infinite;
 	}
-	div:nth-child(1) {
+	.sub_loader:nth-child(1) {
 		animation-delay: calc(var(--duration) * 2 / 3 * -1);
 	}
-	div:nth-child(2) {
+	.sub_loader:nth-child(2) {
 		animation-delay: calc(var(--duration) * 2 / 3 * -2);
 	}
-	div:nth-child(3) {
+	.sub_loader:nth-child(3) {
 		animation-delay: calc(var(--duration) * 2 / 3 * -3);
 	}
 

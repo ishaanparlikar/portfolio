@@ -23,10 +23,10 @@
 {#if animate}
 	<div
 		transition:blur|local={{ amount: 300, duration: 1000 }}
-		class="flex flex-wrap justify-start gap-8 h-full max-w-7xl mx-auto items-center"
+		class="flex md:flex-row flex-col md:flex-wrap justify-start gap-8 h-full max-w-7xl mx-auto items-center px-4"
 	>
 		{#each projects as project, i}
-			<div class="card_ w-[30%] mx-auto relative border">
+			<div class="card_ w-full md:w-[30%] mx-auto relative border">
 				<div class="bg-secondary p-3 card_data flex flex-1">
 					<div class="flex gap-4 mb-2 w-full" />
 					<div class="flex gap-2">

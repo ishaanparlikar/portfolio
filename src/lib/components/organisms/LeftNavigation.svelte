@@ -12,7 +12,7 @@
 </script>
 
 {#if animation}
-	<div transition:fly|local={{ y: 200, duration: 2000 }} class="relative w-24 h-full">
+	<div transition:fly|local={{ y: 200, duration: 2000 }} class="hidden lg:block relative w-24 h-full">
 		<div class="w-full h-full absolute px-2 flex flex-col justify-end  items-center">
 			<span class="py-6 h-full">
 				<hr class="bg-accent w-[1px] h-full" />

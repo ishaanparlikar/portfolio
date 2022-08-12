@@ -15,7 +15,7 @@
 </script>
 
 <progress
-	class="progress progress-neutral w-56 border border-secondary"
+	class="progress progress-neutral w-full md:w-56 border border-secondary"
 	value={$progress}
 	max="100"
 	data-tip={`${progress}`}

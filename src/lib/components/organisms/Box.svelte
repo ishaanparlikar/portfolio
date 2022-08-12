@@ -12,9 +12,9 @@
 </script>
 
 {#if animation}
-	<div class="p-6 shadow-lg shadow-accent border border-accent">
+	<div class="p-6 shadow-lg shadow-accent border border-accent w-full lg:w-auto">
 		{#if title}
-			<h2 class="text-3xl text-neutral text-center mb-10">{title}</h2>
+			<h2 class="md:text-3xl text-xl text-neutral text-center mb-10">{title}</h2>
 		{/if}
 		<div class={` ${styles}`} transition:fade|local={{ delay: 250, duration: 800 }}>
 			<slot />

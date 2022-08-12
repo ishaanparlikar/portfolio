@@ -6,8 +6,12 @@ module.exports = {
 			fontFamily: {
 				primary: 'Arima',
 				secondary: 'Space Mono'
+			},
+			screens:{
+				'mobile':{'max':'600px'}
 			}
-		}
+		},
+
 	},
 	plugins: [require('daisyui')],
 	daisyui: {
