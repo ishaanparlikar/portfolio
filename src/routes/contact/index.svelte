@@ -3,6 +3,7 @@
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
+	import { t } from '$lib/locales/i18n';	
 	import Modal from '$lib/components/organisms/Modal.svelte';
 	onMount(() => {
 		const analytics = getAnalytics(app);
@@ -23,7 +24,10 @@
 </script> -->
 
 <svelte:head>
-	<title>Contact</title>
+	<title>Contact {$t('name')}</title>
+	<meta name="description" content={`Contact ${$t('name')} `}>
+	<meta name="email" content={`${$t('emailLink')} `}>
+	<meta name="LinkedIn" content={`${$t('linkedInLink')} `}>
 </svelte:head>
 
 <div class="max-w-xl mx-auto min-h-screen flex flex-col justify-center px-8 lg:px-0 items-center">

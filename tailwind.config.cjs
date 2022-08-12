@@ -9,7 +9,7 @@ module.exports = {
 			},
 			screens:{
 				'mobile':{'max':'600px'}
-			}
+			},
 		},
 
 	},

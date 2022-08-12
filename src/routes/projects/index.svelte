@@ -4,7 +4,6 @@
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
 	import projects from '/static/data/Projects.json';
-	import Button from '$lib/components/atoms/Button.svelte';
 	import { blur } from 'svelte/transition';
 	import { t } from '$lib/locales/i18n';
 	let animate = false;
@@ -18,6 +17,10 @@
 
 <svelte:head>
 	<title>Projects</title>
+	<meta name="description" content={`Projects by ${$t('name')} `}>
+	<meta name="email" content={`${$t('emailLink')} `}>
+	<meta name="LinkedIn" content={`${$t('linkedInLink')} `}>
+	<meta name="keywords" content="HTML, CSS, JavaScript, React, UI Engineer, Front-End Developer, Front-end Engineer, NodeJS, Svelte , VueJs">
 </svelte:head>
 
 {#if animate}

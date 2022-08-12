@@ -1,6 +1,5 @@
 <script>
 	import { fade, fly, slide } from 'svelte/transition';
-	import { linear } from 'svelte/easing';
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { app } from '../../firebase';
 	import { onMount } from 'svelte';
@@ -17,12 +16,15 @@
 
 <svelte:head>
 	<title>About {$t('name')}</title>
+	<meta name="description" content={`About ${$t('name')} `}>
+	<meta name="email" content={`${$t('emailLink')} `}>
+	<meta name="LinkedIn" content={`${$t('linkedInLink')} `}>
 </svelte:head>
 
 <div class="mx-auto lg:flex items-center justify-center lg:justify-between h-full max-w-4xl px-8">
 	{#if animate}
 	<div class="border border-4 border-accent p-6 lg:h-[500px] lg:w-[300px]">
-		<img transition:fade|local={{ delay: 100, duration: 300 }} class="lg:grayscale lg:hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src="https://picsum.photos/800/" alt="">
+		<img transition:fade|local={{ delay: 100, duration: 300 }} class="lg:grayscale lg:hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src="https://picsum.photos/800/" alt={`${$t('name')} Image`}>
 	</div>
 
 	<div class="max-w-md flex flex-col justify-center lg:items-start items-center">
