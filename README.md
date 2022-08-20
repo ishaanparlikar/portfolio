@@ -58,5 +58,4 @@ You can preview the production build with `npm run preview`.
 ### Dont forget to Star if you like the project
 
 
-
 ### Any suggestions are welcome as well. 
