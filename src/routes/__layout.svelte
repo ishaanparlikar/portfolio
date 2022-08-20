@@ -9,9 +9,9 @@
 	let loading = true;
 
 	onMount(() => {
-		setTimeout(() => {
+
 			loading = false;
-		}, 1500);
+	
 	});
 </script>
 
