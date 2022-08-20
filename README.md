@@ -37,7 +37,7 @@ npm run dev -- --open
 
 ## **Copy example env file and add the required API Keys like firebase, Email-JS etc.**
 
-<br>
+
 
 # Building
 
@@ -51,14 +51,12 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
-<br>
-<br>
 
 ### **For any bugs/issues create a issue on github or let me know on hireishanparlikar@gmail.com**
-<br>
+
 
 ### Dont forget to Star if you like the project
 
-<br>
+
 
 ### Any suggestions are welcome as well. 
