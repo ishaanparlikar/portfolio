@@ -3,7 +3,7 @@
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
-	import projects from '/static/data/Projects.json';
+	import projects from '$static/data/Projects.json';
 	import { blur } from 'svelte/transition';
 	import { t } from '$lib/locales/i18n';
 	let animate = false;

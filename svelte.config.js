@@ -16,6 +16,9 @@ const config = {
 		prerender: {
 			default: true,
 		},
+		alias:{
+			'$static':'./static'
+		}
 	}
 };
 

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ProgressIcon from '$lib/components/organisms/ProgressIcon.svelte';
-	import IconTypes from '/static/data/IconType.json';
+	import IconTypes from '$static/data/IconType.json';
 	import Box from '$lib/components/organisms/Box.svelte';
 	import Icon from '@iconify/svelte';
 	import { fly } from 'svelte/transition';
