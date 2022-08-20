@@ -20,9 +20,9 @@
 		<Loader duration="1.5s" size="85" />
 	</div>
 {:else}
-	<div class="flex flex-col h-full">
+	<div class="flex flex-col min-h-screen lg:h-full">
 		<Navbar />
-		<div class="flex h-full">
+		<div class="flex min-h-screen lg:h-full">
 			<LeftNavigation />
 			<main class="w-full">
 				<slot />

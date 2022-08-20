@@ -1,5 +1,6 @@
 <script lang="ts">
 	export let href: any='';
+	export let download:any;
 	export let onClickEvent:Function=new Function;
 </script>
 

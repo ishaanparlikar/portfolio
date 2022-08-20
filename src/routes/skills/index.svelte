@@ -8,7 +8,6 @@
 	import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { app } from '../../firebase';
 	import { t } from '$lib/locales/i18n';	
-	import { t } from '$lib/locales/i18n';	
 
 	onMount(() => {
 		const analytics = getAnalytics(app);
