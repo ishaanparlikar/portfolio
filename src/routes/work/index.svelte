@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { app } from '../../firebase';
 	// @ts-ignore
-	import works from '$static/data/Work.json';
+	import works from '$lib/assets/data/Work.json';
 	import { fade, fly } from 'svelte/transition';
 	import { t } from '$lib/locales/i18n';
 	let animate = false;

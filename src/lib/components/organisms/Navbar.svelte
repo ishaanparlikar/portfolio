@@ -2,7 +2,7 @@
 	import Button from '$lib/components/atoms/Button.svelte';
 	import ThemeToggle from '$lib/components/atoms/ThemeToggle.svelte';
 	// @ts-ignore
-	import navlinks from '$static/data/Navlinks.json';
+	import navlinks from '$lib/assets/data/Navlinks.json';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 

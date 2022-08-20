@@ -4,7 +4,7 @@
 	import { app } from '../../firebase';
 	import { onMount } from 'svelte';
 	import { t } from '$lib/locales/i18n';
-
+	import avatar from '$lib/assets/Images/avatar.png'
 	const analytics = getAnalytics(app);
 	let animate = false;
 	
@@ -24,7 +24,7 @@
 <div class="mx-auto lg:flex items-center justify-center lg:justify-between h-full max-w-4xl px-8">
 	{#if animate}
 	<div class="border border-4 border-accent p-6 lg:h-[500px] lg:w-[300px]">
-		<img transition:fade|local={{ delay: 100, duration: 300 }} class="lg:grayscale lg:hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src="/static/data/images/avatar.png" alt={`${$t('name')} Image`}>
+		<img transition:fade|local={{ delay: 100, duration: 300 }} class="lg:grayscale lg:hover:grayscale-0 transition-all delay-100 object-cover h-full w-full" src={avatar} alt={`${$t('name')} Image`}>
 	</div>
 
 	<div class="max-w-md flex flex-col justify-center lg:items-start items-center">
