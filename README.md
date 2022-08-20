@@ -1,15 +1,15 @@
-## About the Project
+# About the Project
 
 Personal Portfolio website ready for production. Just fork or clone it, Add it in your github and publish to your favorite Hosting provider. ( I recommend **Vercel**).
 
-## Dependancies
+# Dependancies
 
-### Libraries
+## Libraries
 1. Iconify https://docs.iconify.design/icon-components/svelte/
 2. Svelte 
-3. DaisyUI
+3. Tailwind Css with Daisy UI
 4. Firebase (Analytics)
-
+5. Email Js
 
 ## Features
 1. Minimal Dependancies and Latest technologies
@@ -17,11 +17,13 @@ Personal Portfolio website ready for production. Just fork or clone it, Add it i
 3. Ready for SSR, SSG, CSR
 4. **Dark Mode***/Light Mode
 5. Firebase Analytics - Add Config into env file and start Tracking
-6. Playwrite Tests
-7. Typescript Typesafe
+6. Typesafe
+7. Contact form submission with Email-Js.
+8. SEO Ready.
+9. Simple File Structure
 
 
-## Developing
+# Developing
 Clone and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
@@ -31,7 +33,13 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+# Env Files
+
+## **Copy example env file and add the required API Keys like firebase, Email-JS etc.**
+
+<br>
+
+# Building
 
 To create a production version of your app:
 
@@ -43,6 +51,14 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
+<br>
+<br>
 
+### **For any bugs/issues create a issue on github or let me know on hireishanparlikar@gmail.com**
+<br>
 
+### Dont forget to Star if you like the project
 
+<br>
+
+### Any suggestions are welcome as well. 
