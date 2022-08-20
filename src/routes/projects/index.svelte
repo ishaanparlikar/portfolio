@@ -17,49 +17,49 @@
 
 <svelte:head>
 	<title>Projects</title>
-	<meta name="description" content={`Projects by ${$t('name')} `}>
-	<meta name="email" content={`${$t('emailLink')} `}>
-	<meta name="LinkedIn" content={`${$t('linkedInLink')} `}>
-	<meta name="keywords" content="HTML, CSS, JavaScript, React, UI Engineer, Front-End Developer, Front-end Engineer, NodeJS, Svelte , VueJs">
+	<meta name="description" content={`Projects by ${$t('name')} `} />
+	<meta name="email" content={`${$t('emailLink')} `} />
+	<meta name="LinkedIn" content={`${$t('linkedInLink')} `} />
+	<meta
+		name="keywords"
+		content="HTML, CSS, JavaScript, React, UI Engineer, Front-End Developer, Front-end Engineer, NodeJS, Svelte , VueJs"
+	/>
 </svelte:head>
-
-{#if animate}
-	<div
-		transition:blur|local={{ amount: 300, duration: 1000 }}
-		class="flex md:flex-row flex-col md:flex-wrap justify-start gap-8 h-full max-w-7xl mx-auto items-center px-4"
-	>
-		{#each projects as project, i}
-			<div class="card_ w-full md:w-[30%] mx-auto relative border">
-				<div class="bg-secondary p-3 card_data flex flex-1">
-					<div class="flex gap-4 mb-2 w-full" />
-					<div class="flex gap-2">
-						<a class="text-primary hover:scale-110" href="/"
-							><Icon height="20" width="20" icon="charm:github" /></a
-						>
-						<a class="text-primary hover:scale-110" href="/"
-							><Icon height="20" width="20" icon="line-md:external-link" /></a
-						>
+<template>
+	{#if animate}
+		<div
+			transition:blur|local={{ amount: 300, duration: 1000 }}
+			class="flex md:flex-row flex-col md:flex-wrap justify-start gap-8 h-full max-w-7xl mx-auto items-center px-4"
+		>
+			{#each projects as project, i}
+				<div class="card_ w-full md:w-[30%] mx-auto relative border">
+					<div class="bg-secondary p-3 card_data flex flex-1">
+						<div class="flex gap-4 mb-2 w-full" />
+						<div class="flex gap-2">
+							<a class="text-primary hover:scale-110" href="/"
+								><Icon height="20" width="20" icon="charm:github" /></a
+							>
+							<a class="text-primary hover:scale-110" href="/"
+								><Icon height="20" width="20" icon="line-md:external-link" /></a
+							>
+						</div>
+					</div>
+					<div class="overflow-hidden w-full bg-primary p-4 mt-11">
+						<h1 class="font-secondary mb-2">{project.title}</h1>
+						<p class="mb-2 text-sm">{project.description}</p>
+						<div class="flex gap-4">
+							{#each project.stack as i}
+								<Icon height="20" width="20" icon={`${i.logo}`} />
+							{/each}
+						</div>
 					</div>
 				</div>
-				<div class="overflow-hidden w-full bg-primary p-4 mt-11">
-					<h1 class="font-secondary mb-2">{project.title}</h1>
-					<p class="mb-2 text-sm">{project.description}</p>
-					<div class="flex gap-4">
-						{#each project.stack as i}
-							<Icon height="20" width="20" icon={`${i.logo}`} />
-						{/each}
-					</div>
-				</div>
-			</div>
-		{/each}
-	</div>
-{/if}
+			{/each}
+		</div>
+	{/if}
+</template>
 
 <style>
-	.btn {
-		min-height: auto;
-		height: 20px;
-	}
 	.card_ {
 		height: 280px;
 		overflow: hidden;
