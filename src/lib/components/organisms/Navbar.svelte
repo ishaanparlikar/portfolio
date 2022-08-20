@@ -2,7 +2,7 @@
 	import Button from '$lib/components/atoms/Button.svelte';
 	import ThemeToggle from '$lib/components/atoms/ThemeToggle.svelte';
 	// @ts-ignore
-	import navlinks from '/static/data/Navlinks.json';
+	import navlinks from '$static/data/Navlinks.json';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 
@@ -39,7 +39,7 @@
 			{/each}
 		</ul>
 	</div>
-	<Button href="/static/data/resume.pdf" download>Resume</Button>
+	<a target="_blank" class="btn bg-transparent border border-accent text-accent border-2 hover:text-primary hover:bg-accent hover:border-neutral" href="/static/data/resume.pdf" download>Resume</a>
 	{#if screen >= 1024}
 		<div class="ml-6">
 			<ThemeToggle />
