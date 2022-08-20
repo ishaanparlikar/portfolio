@@ -1,7 +1,7 @@
 <script>
-	import { getAnalytics, logEvent } from 'firebase/analytics';
+	// import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
-	import { app } from '../../firebase';
+	// import { app } from '../../firebase';
 	// @ts-ignore
 	import works from '$lib/assets/data/Work.json';
 	import { fade, fly } from 'svelte/transition';
@@ -20,8 +20,8 @@
 
 	onMount(() => {
 		animate = true;
-		const analytics = getAnalytics(app);
-		logEvent(analytics, 'page_title');
+		// const analytics = getAnalytics(app);
+		// logEvent(analytics, 'page_title');
 	});
 </script>
 

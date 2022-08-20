@@ -1,16 +1,16 @@
 <script>
 	import { fade, fly, slide } from 'svelte/transition';
 	import { getAnalytics, logEvent } from 'firebase/analytics';
-	import { app } from '../../firebase';
+	// import { app } from '../../firebase';
 	import { onMount } from 'svelte';
 	import { t } from '$lib/locales/i18n';
 	import avatar from '$lib/assets/Images/avatar.png'
-	const analytics = getAnalytics(app);
+	// const analytics = getAnalytics(app);
 	let animate = false;
 	
 	onMount(() => {
 		animate = true;
-		logEvent(analytics, 'page_title');
+		// logEvent(analytics, 'page_title');
 	});
 </script>
 

@@ -1,8 +1,8 @@
 <script>
 	import Icon from '@iconify/svelte';
-	import { getAnalytics, logEvent } from 'firebase/analytics';
+	// import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
-	import { app } from '../../firebase';
+	// import { app } from '../../firebase';
 	import projects from '$lib/assets/data/Projects.json';
 	import { blur } from 'svelte/transition';
 	import { t } from '$lib/locales/i18n';
@@ -10,8 +10,8 @@
 
 	onMount(() => {
 		animate = true;
-		const analytics = getAnalytics(app);
-		logEvent(analytics, 'page_title');
+		// const analytics = getAnalytics(app);
+		// logEvent(analytics, 'page_title');
 	});
 </script>
 

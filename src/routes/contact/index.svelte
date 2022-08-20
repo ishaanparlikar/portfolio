@@ -1,13 +1,13 @@
 <script lang="ts">
 	import Button from '$lib/components/atoms/Button.svelte';
-	import { getAnalytics, logEvent } from 'firebase/analytics';
+	// import { getAnalytics, logEvent } from 'firebase/analytics';
 	import { onMount } from 'svelte';
-	import { app } from '../../firebase';
+	// import { app } from '../../firebase';
 	import { t } from '$lib/locales/i18n';	
 	import Modal from '$lib/components/organisms/Modal.svelte';
 	onMount(() => {
-		const analytics = getAnalytics(app);
-		logEvent(analytics, 'page_title');
+		// const analytics = getAnalytics(app);
+		// logEvent(analytics, 'page_title');
 	});
 
 	let openModal:boolean=false

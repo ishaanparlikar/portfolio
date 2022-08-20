@@ -5,14 +5,14 @@
 	import Icon from '@iconify/svelte';
 	import { fly } from 'svelte/transition';
 	import { onMount } from 'svelte';
-	import { getAnalytics, logEvent } from 'firebase/analytics';
-	import { app } from '../../firebase';
+	// import { getAnalytics, logEvent } from 'firebase/analytics';
+	// import { app } from '../../firebase';
 	import { t } from '$lib/locales/i18n';	
 
-	onMount(() => {
-		const analytics = getAnalytics(app);
-		logEvent(analytics, 'page_title');
-	});
+	// onMount(() => {
+	// 	const analytics = getAnalytics(app);
+	// 	logEvent(analytics, 'page_title');
+	// });
 	let animate = false;
 	onMount(() => {
 		animate = true;
